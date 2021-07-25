@@ -119,7 +119,7 @@ class _AnotherScreenState extends State<AnotherScreen> {
     return Scaffold(
         body: Center(
       child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
-        Text("Thank you for Submitting", style: TextStyle(fontSize: 30.0)),
+        Text("Thank you Shafa", style: TextStyle(fontSize: 30.0)),
         InkWell(
           onTap: () {
             Navigator.pop(context);
