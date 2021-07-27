@@ -9,9 +9,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
       theme: ThemeData(),
-      home: MyHomePage(title: 'App Development'),
+      home: MyHomePage(title: 'Worth Read'),
     );
   }
 }
@@ -71,7 +70,13 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-              'Welcome to the First Screen',
+              'Glad to you see you here!',
+              style: TextStyle(
+                fontSize: 20.0,
+                fontWeight: FontWeight.bold,
+                letterSpacing: 2.0,
+              ),
+
             ),
             Image(
               image: NetworkImage(
@@ -80,18 +85,7 @@ class _MyHomePageState extends State<MyHomePage> {
               width: 100,
               height: 100,
             ),
-            Image(
-              image: NetworkImage(
-                  'https://images.unsplash.com/photo-1551355738-1875b6664915?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=625&q=80'),
-              width: 100,
-              height: 100,
-            ),
-            Image(
-              image: NetworkImage(
-                  'https://images.unsplash.com/photo-1480694313141-fce5e697ee25?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80'),
-              width: 100,
-              height: 100,
-            ),
+            
             ElevatedButton(
                 onPressed: () {
                   Navigator.push(context, MaterialPageRoute(builder: (context) {
